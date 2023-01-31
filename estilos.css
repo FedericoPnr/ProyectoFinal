@@ -1,0 +1,665 @@
+/* Barra de navegacion*/
+.navbar{
+    padding: 1rem;
+    background: linear-gradient(to bottom, rgb(13, 110, 253), white);
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand{
+    width: 70px;
+    border-radius: 50%;
+}
+
+.nav-btn{
+    margin: 10px;
+    padding: 0px;
+    background: linear-gradient(rgb(13, 110, 253), rgb(245, 246, 247));
+    font-weight: bold;
+    transition: .1s ease all;
+}
+
+
+.nav-btn:hover {
+	box-shadow: 3px 0px 30px rgb(255, 252, 252);
+    margin-top: 1px;
+}
+
+.nav-bar-fixed{
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    
+}
+
+/*Estilos generales*/
+
+/*Todas las secciones van a etar alineadas verticalmente*/
+
+section{
+    /*1- todo este contenedor tambien lo haremos en un div con un estilo de bootstrap 
+    en el documento html para mostrar las distintas posibilidades se vera con el item 1-*/
+    /*section: es el mas general de los selectores, selecciona todos los elementos 
+    de un tipo especifico, este estilo se aplica a todas las secciones*/
+
+
+    display: flex;
+    /*el valor flex en display le da a los elementos las propiedades de flexbox*/
+    
+    
+    
+     flex-direction: column;
+     /* flex-direction: establece el eje principal del contenedor,
+     la direccion en la cual se van a colocar los elemento dentro del contenedor
+     los valores pueden ser:*row - row-reverse - column - column-reverse*/
+
+     align-items: center;
+        /* align-items: define como se distribuyen los elementos en el eje perpendicular al eje principal
+     es decir el eje secundario. Los valores pueden ser:display:
+     flex-start - flex-end - center - baseline - strech(estirar para que ocupen todo el espacio);
+     para dar clases en html con bootstrap se usa: .align-items-start
+     .align-items-end - .align-items-center - .align-items-baseline - .align-items-strech -*/
+    
+    justify-content: center;
+    /* justify-content: define como se distribuyen los elementos en el eje principallos valores pueden ser:display:
+    flex-start - flex-end - center - space-between - space-around - space-evenly;
+
+    lo mismo se puede lograr usando los justify-content de bootstrap estos son:display:
+    .justify-content-start .justify-content-end .justify-content-center
+    .justify-content-between .justify-content-around .justify-content-evenly;
+    estas clases se aplican al elemento en el documento html
+    */
+}
+
+.seccion-oscura{
+    background-color: #1b1b32;
+    color: white;
+}
+
+.seccion-clara{
+    color:black
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Bowlby One', cursive;
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color:#584e4e;
+}
+
+.seccion-texto{
+    font-size: 1.2rem;
+}
+
+.texto-negro{
+    color: #282829;
+}
+
+.texto-blanco{
+    color: white;
+}
+
+/* seccion Hero*/
+
+.hero{
+    
+    min-height: 450px;
+    text-align: center;
+   
+   
+    
+}
+
+.hero-principal{
+    padding: 3rem;
+}
+
+.hero-imagen-info{
+    padding: 20px;
+}
+.imagen-desarrollador{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    /*2-Tambien se puede generar el mismo efecto con una clase de boostrap en html
+    colocando rounded-circle dentro de la clase*/
+    margin: 20px;
+}
+.container-info{
+    font-size: 20px;
+    margin-top: 40px;
+    padding-block: 25px;
+    font-weight: bold;
+}
+
+.saludo{
+    font-size: 3rem;
+    font-family: 'Bowlby One', cursive;
+    color: #282829;
+
+    /* rem es un tamaño relativo al elemento raiz. Es decir que cualquier modificación al alemento
+raiz, afecta a este*/ 
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+/*Sobre mi */
+
+.sobre-mi{
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+/*Experiencia*/
+
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+    color: white;
+    background-color: #1b1b32;
+}
+
+.experiencia i{
+    font-size:2.5rem;
+    border-radius: 50%;
+    padding: 8px 19px;
+    background-color: #0a0a23;
+    color: #7ade30;
+
+}
+
+.experiencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0
+}
+
+.badges-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badge{
+    margin: 5px;
+}
+
+/*Proyectos*/
+
+.proyectos-contenedor{
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyectos-recientes{
+    padding: 40px;
+}
+
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    transition: all 0.8s ease;
+}
+
+.proyecto:hover img{
+    opacity: 0.3;
+/*cuando el mouse este por encima de proyecto, se le va a aplicar casi transparente a img*/
+}
+
+.overlay{
+    transition: all 0.8s ease;
+    opacity: 0;
+    /*Opacity 0 significa que es transparente*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.proyecto:hover .overlay{
+    /*cuando el mouse este por encima de proyecto, se le va a aplicar opacity 1 a .overlay*/    
+        opacity: 1;
+}
+
+.proyecto{
+    position: relative;
+    /*Esto hace que pueda verse el overlay, de no estar no se puede visualizar*/
+}
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.overlay i{
+    color: black;
+    font-size: 60px;
+    margin: 30px;
+    text-align: center;
+}
+
+.btn-info{
+    background-color: rgb(13, 110, 253);
+    color: #f5f6f7;
+    border-color: #1b1b32;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 20px;
+    transition: .1s ease all;
+}
+.btn-info:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.btn-info i{
+    margin-left: 5px;
+}
+
+
+/*Articulos*/
+
+.articulos{
+    min-height: 500px;
+    /*para la seccion*/
+    padding: 30px; 
+    /*Separaacion interna con el contenido*/
+}
+
+.card-header{
+    font-weight: bold;
+}
+.articulos .card{
+    width: 80%;
+    max-width: 600px;
+    margin:20px;
+}
+
+/*Testimonios*/
+
+.testimonios{
+    padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel{
+    max-width: 500px;
+}
+
+.carousel-item{
+    height: 500px; 
+}
+
+.testimonio-imagen{
+    height: 150px;
+    margin: 10px 10px 20px 10px;
+}
+
+.carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-texto{
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.testimonio-info{
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonio-info p{
+    margin-bottom: 0;
+}
+
+.testimonio-footer .cliente{
+    font-size: 1.2rem;
+}
+
+.testimonio-info .cargo{
+    font-size: 0.9rem;
+    color:#656060;
+}
+
+/*Contacto*/
+
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;   
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    /*el margen negativo logra un efecto de mezcla, como que el elemento esta entre una seccion y otra*/
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    /*deja ver el color de fondo, haciendo del background transparente*/
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    /*em Relativo al tamaño del texto del contenedor*/
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button i{
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    background-color: white;
+    color: black;
+}
+
+.contacto button:hover i{
+    color: black;
+}
+
+/*Pie de pagina (footer)*/
+.footer{
+    min-height: 500px;
+}
+
+.footer-logo{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i{
+    color: black;
+}
+
+.derechos-autor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+/*formulario contacto*/
+
+
+
+
+.formulario {
+	display: grid;
+	gap: 20px;
+    font-family: 'Roboto', sans-serif;
+	background: rgb(13, 110, 253);
+    max-width: 100%;
+	width: 100%;
+	margin: auto;
+	padding: 40px;
+    
+}
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #282829;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+    
+}
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+}
+/* Adaptable(responsivo) */
+
+@media screen and(max-width: 767px){
+    /*Hasta una cierta dimencion hace lo de abajo*/
+    .navbar-brand{
+        display: none
+    };
+};
+
+@media screen and(min-width: 700px){
+    /*a partir de este ancho se va a 
+    aplicar al elemento especificado abajo los siguientes parametros*/
+    .hero-inferior-imagen{
+       max-width: 600px;  
+    }
+    /*esto hace que la imagen no ocupe todo el ancho de la pagina*/
+}
+
+@media screen and(max-width: 800px){
+    /*para dispositivos chicos, de menos de 800px achicar imagen y texto en .testimonio */
+    .testimonio-imagen{
+        height: 120px;
+        width: 120;
+    }
+    .testimonio-texto{
+        font-size: 18px;
+    }
+}
+
+
+    

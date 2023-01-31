@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    
+    <!--Metadatos-->
+    <meta charset="utf-8">
+    <meta name="author" content="Jane Doe">
+    <meta name="desctription" content="curriculum random de Federico Piñero">
+    <meta name="keywords" content="lkjhkggfjtfiktyfouk">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Titulo-->
+    <title>CV random user</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="imagenes/Maletin2.png">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!--CDN para agergar iconos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <!--CSS-->
+    <link href="estilos.css" rel="stylesheet">
+    
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Quicksand:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    </head>    
+  <body>
+
+    <!--Barra de navegacion: nos permite navegar atraves del sitio web-->
+    <nav class="nav-bar-fixed navbar navbar-expand-md navbar-light">
+      <!--Contenedor que se ajusta al ancho de la pantalla-->
+      <div class="container-fluid">
+        <!--Es el boton que va a mostrar el menu en dispositivos pequeños
+        mediante el id reconoce que elemento tiene que desplegar-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+             <a class="navbar-brand" href="#">
+              <img class="navbar-brand"src="imagenes/Maletin2.png" width="50" alt="Logo de la pagina web">
+            </a>              
+          <!--Ajusta el contenido principal de la lista desordenada (ul) al centro-->
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <!--los href te llevan a otras paginas de referencia-->
+            <button type="button" class="nav-btn btn btn-primary">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </button>
+            <button type="button" class="nav-btn btn btn-primary">
+              <a class="nav-link active" href="#experiencia">Experiencia</a>
+            </button>
+            <button type="button" class="nav-btn btn btn-primary">
+              <a class="nav-link active" href="#proyectos-recientes">Proyectos</a>
+            </button>
+            <button type="button" class="nav-btn btn btn-primary">
+              <a class="nav-link active" href="#testimonios">Testimonios</a>
+            </button>
+            <button type="button" class="nav-btn btn btn-primary">
+              <a class="nav-link active" href="#contacto">Contacto</a>
+            </button>
+          </ul>
+        </div>
+    </nav>
+
+    <!--Seccion Hero
+
+    <section>: etiqueta html semantica nos permite dar masinformacion sobre lo que
+    representa ese elemento.
+    le dice al documento que esta es una seccion generica de este documento web-->
+    <section class="hero align-items-strech">
+      <!--align-items-strech: alinea para llenar su contenedor. Strech significa estirar, 
+      los contentidos se van a estirar perpendicular a su eje principal
+    section: selecciona elementos de un mismo estilo-->
+    
+    <h1 id="saludo" class="saludo"></h1>
+    <h2>Desarrollo sitios web, escribo articulos sobre programación y soy artista audiovisual</h2>
+        <div class="container align-items-center " >
+          <div class="hero-imagen-info row">
+            <div class="columna col-12 col-md-6" id="hero-imagen-desarrollador" >           
+            </div>          
+          <div class="columna col-12 col-md-6 container-info" id="info-desarrollador">
+          </div>       
+          </div>
+        </div>
+    </section>
+
+    <!--Sobre mi-->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <!--El div actua como un contenedor-->
+        <h2 class="seccion-titulo" id="seccion-titulo"> Conoce a Dwayne Olson</h2>
+        <p class="seccion-texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et velit mauris. Donec molestie imperdiet enim, at gravida lorem faucibus a. Etiam at feugiat erat. Donec nec enim at elit scelerisque pellentesque ut sit amet lorem. Quisque lacinia ligula sem, quis semper libero vulputate ut. In tristique tristique risus. Nam luctus pretium dui, in maximus felis porttitor a. Etiam mattis velit at dui congue eleifend. Praesent nulla arcu, eleifend quis ullamcorper et, lobortis vel enim. Proin eu leo vel purus rutrum feugiat. Ut sit amet velit sodales, commodo est in, bibendum mauris. Etiam eleifend felis et sem ullamcorper tempor. Sed luctus ipsum vitae fringilla blandit. Nulla neque lacus, facilisis vitae commodo a, sodales in sem.</p>
+      </div>
+    </section>
+
+    <!--Experiencia-->
+    <section id="experiencia" class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!--Desarrollo Web-->
+          <div class="columna col-12 col-md-4">
+            <!--Para dispositivos pequeños se aplica una columna de 12 grid
+                Para dispositivos medianos se aplican columnas de 4 grid dentro de la misma "row"(fila).
+                al ser 3 elementos suman 12 que es la cantidad de columnas que tiene la grid
+                esto lo hace boostrap gracias a sus clases predeterminadas-->
+                <i class="bi bi-laptop"></i>
+                <!--icono de laptot sacado de bootstrap-->
+            <p class="experiencia-titulo">Deasarrollo web</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>             
+            <div class="badges-contenedor">
+            <!--badges en español se traduciria como "insignias,
+              Son componentes de bootstrap que ayudan a personalisar la pagina"-->
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">React</span>
+              </div>
+          </div>
+          <!--Articulos-->
+          <div class="columna col-12 col-md-4">
+            <!--Para dispositivos pequeños se aplica una columna de 12 grid
+                Para dispositivos medianos se aplican columnas de 4 grid dentro de la misma "row"(fila).
+                al ser 3 elementos suman 12 que es la cantidad de columnas que tiene la grid
+                esto lo hace boostrap gracias a sus clases predeterminadas-->
+                <i class="bi bi-laptop"></i>
+                <!--icono de laptot sacado de bootstrap-->
+            <p class="experiencia-titulo">Articulos</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>             
+            <div class="badges-contenedor">
+            <!--badges en español se traduciria como "insignias"-->
+              <span class="badge text-bg-primary">Escribir</span>
+              <span class="badge text-bg-primary">Editar</span>
+              <span class="badge text-bg-primary">Blogs</span>
+              </div>
+          </div>
+          <!--Estudiante-->
+          <div class="columna col-12 col-md-4">
+            <!--Para dispositivos pequeños se aplica una columna de 12 grid
+                Para dispositivos medianos se aplican columnas de 4 grid dentro de la misma "row"(fila).
+                al ser 3 elementos suman 12 que es la cantidad de columnas que tiene la grid
+                esto lo hace boostrap gracias a sus clases predeterminadas-->
+                <i class="bi bi-laptop"></i>
+                <!--icono de laptot sacado de bootstrap-->
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>             
+            <div class="badges-contenedor">
+            <!--badges en español se traduciria como "insignias"-->
+              <span class="badge text-bg-primary">Desarrollo web</span>
+              <span class="badge text-bg-primary">Pyton</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Proyectos-->
+    <section id="proyectos-recientes" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis Proyectos recientes</h2>
+      <h3 class="seccion-descripcion">Estos son algunos de los proyectos que he creado recientemente</h3>
+    <!--Galeria de proyectos-->
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
+        <!--Proyecto 1-->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/Proyecto 1.png" alt="Abstract-">
+            <div class="overlay">              
+              <!--overlay es informacion adicional que se coloca encima de la imagen-->
+
+              <p>Proyecto 1</p>
+              <div class="iconos-contenedor">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-youtube"></i>  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!--Proyecto 2-->
+         <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/Proyecto 2.png" alt="Abstract-">
+            <div class="overlay">              
+              <!--overlay es informacion adicional que se coloca encima de la imagen-->
+
+              <p>Proyecto 2</p>
+              <div class="iconos-contenedor">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-youtube"></i>  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!--Proyecto 3-->
+         <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/Proyecto 3.png" alt="Abstract-">
+            <div class="overlay">              
+              <!--overlay es informacion adicional que se coloca encima de la imagen-->
+
+              <p>Proyecto 3</p>
+              <div class="iconos-contenedor">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-youtube"></i>  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!--Proyecto 4-->
+         <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/Proyecto 4.png" alt="Abstract-">
+            <div class="overlay">              
+              <!--overlay es informacion adicional que se coloca encima de la imagen-->
+
+              <p>Proyecto 4</p>
+              <div class="iconos-contenedor">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-youtube"></i>  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!--Proyecto 5-->
+         <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/Proyecto 5.png" alt="Abstract-">
+            <div class="overlay">              
+              <!--overlay es informacion adicional que se coloca encima de la imagen-->
+              <p>Proyecto 5</p>
+              <div class="iconos-contenedor">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-youtube"></i>  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!--Proyecto 6-->
+         <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="imagenes/Proyecto 6.png" alt="Abstract-">
+            <div class="overlay">              
+              <p>Proyecto 6</p>
+              <div class="iconos-contenedor">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  <!--noopener noreferrer Se coloca por seguridad-->
+                  <i class="bi bi-youtube"></i>  
+                </a>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+    <button type="button" class="btn btn-info">
+      Ver mas proyectos <i class="bi bi-arrow-right-circle-fill"></i></button>
+    </a>
+    </section>
+    
+    <!--Articulos-->
+    <section id="articulos" class="articulos justify-content-start">
+      <!--para que se agrupen al eje principal al inicio-->
+      <h2 class="seccion-titulo texto-negro">Articulos</h2>
+      <div class="card">
+        <div class="card-header">
+          Aqui veras algunos articulos
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">articulo sobre html
+            </li>  
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">articulo sobre CSS
+            </li>  
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">articulo sobre JavaScript
+            </li>  
+          </a>
+          <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">articulo sobre Bootstrap
+            </li>  
+          </a>
+          
+          </a>
+        </ul>
+      </div>
+      <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver mas articulos <i class="bi bi-arrow-right-circle-fill"></i></button>
+          <!--Esto hace que se agreguen mas elementos dentro del button. 
+            Todo se coloca dentro de <a> para crear el enlace-->
+        </a>
+    </section>
+
+    <!--Testimonios-->
+    <section id="testimonios" class="testimonios seccion-clara">
+      <h2 class="seccion-titulo texto-negro">Testimonios</h2>
+      <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes</h3>
+      <!--Carousel-->
+      <div id="testimonios-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="./imagenes/descarga.png" alt="Testimonio 1">
+              <p class="testimonio-texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              <div class="testimonio-info">
+                <p class="cliente"></p>
+                <p class="cargo">Gerente de proyectos en Desarrollo Web</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="./imagenes/descarga.png" alt="Testimonio 2">
+              <p class="testimonio-texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              <div class="testimonio-info">
+                <p class="cliente"></p>
+                <p class="cargo">Gerente de proyectos en Desarrollo Web</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img class="testimonio-imagen rounded-circle" src="./imagenes/descarga.png" alt="Testimonio 3">>
+              <p class="testimonio-texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              <div class="testimonio-info">
+                <p class="cliente"></p>
+                <p class="cargo">Gerente de proyectos en Desarrollo Web</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carousel" data-bs-slide="prev">
+          <!--Si se cambia el id del carousel,tambiendebe modificarse el data-bs-target=# en ambos casos
+          para que los controles sepan cual es el carrousel que tienen que afectar-->
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <!--Contacto-->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contactame para iniciar tu proyecto de desarrollo web.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:federicopnr@gmail.com">
+                <!--mailto es una forma de hacer un link que habra el mail por defecto del usuario
+                y completa automaticamente con el correo de referencia-->
+                <button type="button">
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Formulario contacto-->
+    <section>
+      <div class="seccion-titulo texto-negro align-items-strech">Suscribite para obtener actualizaciones </div>
+      <form action="" class="formulario" id="formulario">
+
+        <!-- Grupo: Usuario -->
+        <div class="formulario__grupo" id="grupo__usuario">
+          <label for="usuario" class="formulario__label">Usuario</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Fede123">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+        </div>
+  
+        <!-- Grupo: Nombre -->
+        <div class="formulario__grupo" id="grupo__nombre">
+          <label for="nombre" class="formulario__label">Nombre</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Federico Piñero">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+        </div>
+  
+        <!-- Grupo: Contraseña -->
+        <div class="formulario__grupo" id="grupo__password">
+          <label for="password" class="formulario__label">Contraseña</label>
+          <div class="formulario__grupo-input">
+            <input type="password" class="formulario__input" name="password" id="password">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+        </div>
+  
+        <!-- Grupo: Contraseña 2 -->
+        <div class="formulario__grupo" id="grupo__password2">
+          <label for="password2" class="formulario__label">Repetir Contraseña</label>
+          <div class="formulario__grupo-input">
+            <input type="password" class="formulario__input" name="password2" id="password2">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+        </div>
+  
+        <!-- Grupo: Correo Electronico -->
+        <div class="formulario__grupo" id="grupo__correo">
+          <label for="correo" class="formulario__label">Correo Electrónico</label>
+          <div class="formulario__grupo-input">
+            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+        </div>
+  
+        <!-- Grupo: Teléfono -->
+        <div class="formulario__grupo" id="grupo__telefono">
+          <label for="telefono" class="formulario__label">Teléfono</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="2932444199">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+        </div>
+  
+        <!-- Grupo: Terminos y Condiciones -->
+        <div class="formulario__grupo" id="grupo__terminos">
+          <label class="formulario__label">
+            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+            Acepto los Terminos y Condiciones
+          </label>
+        </div>
+        <div class="formulario__mensaje" id="formulario__mensaje">
+          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+        </div>
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+          <button type="submit" class="formulario__btn">Enviar</button>
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+        </div>
+      </form>
+    </section> 
+
+    <!--Pie de pagina-->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-logo rounded-circle" src="imagenes/Maletin2.png" alt="Logo del portafolio">
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-facebook"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="./randomuser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="formulario.js"></script>
+  </body>
+</html>
+
+
+
+
